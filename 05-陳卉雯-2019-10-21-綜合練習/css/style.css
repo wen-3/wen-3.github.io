@@ -64,17 +64,16 @@ div main section{
 }
 
 main{
-    width: 85%;
     background-color:aquamarine;
     margin: 0 auto;
 }
     /* section_1*/
 
 #section_1{
-    width: 100%;
+    width: 85%;
     height:250px;
+    margin: 30px auto;
     display: flex;
-    padding-top: 15px;
 }
 
 .bg1_1{
@@ -136,12 +135,12 @@ main{
 
     /* section_3*/
 #section_3{
-    width: 100%;
+    width: 85%;
     height: 550px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
+    margin:0 auto;
 }
 
 #section_3 .contain{
@@ -150,6 +149,7 @@ main{
     background-color:rgb(184, 158, 184);
     display: flex;
     flex-wrap: wrap;
+    margin:0 auto;
 }
 
 .text3{
