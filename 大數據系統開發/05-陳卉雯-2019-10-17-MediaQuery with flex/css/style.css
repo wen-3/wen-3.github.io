@@ -1,0 +1,254 @@
+body{
+    margin: 0 auto;
+}
+
+*{box-sizing: border-box;}
+
+.box_all{
+    background-color:white;
+    width:100%;
+    height:100vh;
+    display: flex;
+}
+
+.box_left{
+    width: 350px;
+    height: 100%;
+    background-color: rgb(185, 184, 184); 
+    padding-top:130px; 
+}
+
+.box_left_top{
+    width: 130px;
+    height: 130px;
+    background-color: blueviolet;
+    border-radius: 100%;
+    background-image: url("../img/Logo\ _dog.png");
+    background-size: cover;
+    margin: auto;
+}
+
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 90px;
+    position: relative;
+    top: 80px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: indianred;
+    background-color:white;
+} 
+
+.box_right{
+    width:calc(100% - 350px);
+    height: 100vh;
+    background-color:rgb(0, 255, 242);
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_right_middle{
+    width: 800px;
+    height: 700px;
+    background-color:blue;
+    display: flex;   
+}
+
+.X:hover{
+    opacity: 1;
+    border:5px solid gray;
+}
+
+.Y:hover{
+    opacity: 1;
+    border:5px solid gray;
+}
+
+.Z:hover{
+    opacity: 1;
+    border:5px solid gray;
+}
+
+
+.X{
+    width:calc(100% / 3);
+    height: 100%;
+    background-color:orange;
+    background-image: url("../img/義大利比薩鐵塔.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.Y{
+    width:calc(100% / 3);
+    height: 100%;
+    background-color:greenyellow ;
+    background-image: url("../img/台北101大樓.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.Z{
+    width:calc(100% / 3);
+    height: 100%;
+    background-color:red;
+    background-image: url("../img/法國艾菲爾鐵塔.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+@media screen and (max-width:1280px){
+
+.box_right_middle{
+    width: 350px;
+    height: 650px;
+    flex-wrap: wrap;
+}
+
+.X{
+    width:100%;
+    height: 50%;
+}
+
+.Y{
+    width:50%;
+    height: 50%;
+}
+
+.Z{
+    width:50%;
+    height: 50%;
+} 
+    }
+
+@media screen and (max-width:768px){
+.box_all{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box_left{
+    width: 100%;
+    height: 130px;
+    padding:0px 0px; 
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.box_left_top{
+    width: 90px;
+    height: 90px;
+    margin: 0px;
+}
+
+.list{
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    top: 0;
+}
+
+nav ul li{
+    padding: 5px; 
+}
+
+.box_right{
+    width: 100%;
+    height: calc(100% - 130px);
+}
+
+.box_right_middle{
+    width: 350px;
+    height: 450px;
+}
+   }
+
+@media screen and (max-width:375px){
+.box_left{
+    width: 100%;
+    height: 90px;
+    justify-content: flex-start;
+}
+
+.box_left_top{
+    width: 56px;
+    height: 56px;
+    order: 1;
+    position: relative;
+    left: calc(50% - 28px - 25px - 15px);
+}
+
+.box_menu{
+    width: 50px;
+    height: 60px;
+    background-color: green;
+    position: relative;
+    left: 15px;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: none;
+}
+
+nav ul li{
+    width: 142px;
+    height: 35px;
+    padding: 10px; 
+    background-color:rgba(172, 255, 47,0.9);
+    border: 1px solid ;
+    line-height: 12px ;
+    position: relative;
+    top: 60px;
+}
+
+.box_menu:hover .list{
+    display: flex;
+}
+
+.box_right{
+    width: 100%;
+    height: calc(100% - 90px);
+}
+
+.box_right_middle{
+    width: 100%;
+    height: 100%;
+}
+
+.X{
+    width:100%;
+    height: calc(100% / 3);
+}
+
+.Y{
+    width:100%;
+    height: calc(100% / 3);
+}
+
+.Z{
+    width:100%;
+    height: calc(100% / 3);
+}
+   }

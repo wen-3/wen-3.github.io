@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position-1</title>
+
+    <style>
+        .wh1{
+            width: 250px;
+            height: 150px;
+            background-color:rgb(47, 255, 186);
+        }
+        .wh2{
+            width: 50px;
+            height: 50px; 
+            background-color: orange;           
+        }
+
+        .box1{
+            position: relative;
+        }
+        .box2{
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(50% - 25px);
+        }
+
+        .box3{
+            position: relative;
+            margin: 10px 0px;
+        }
+
+        .box4{
+            position: absolute;
+            bottom:0px; 
+            right: 0px;
+        }
+
+        .box5{
+            position: absolute;
+            left:calc(50% - 25px);
+        }
+        
+        .box6{
+            position: absolute;
+            top:calc(50% - 25px);
+        }
+
+        .box7{
+            position: absolute;
+            bottom:0px; 
+            left:calc(50% - 37.5px);
+        }
+
+        .box8{
+            position: absolute;
+            top:calc(50% - 25px);
+            right:0px;
+        }
+        
+        .box9{
+            position: absolute;
+            top:calc(50% - 25px);
+            right:-25px;
+        }
+
+        .box10{
+            position: absolute;
+            bottom: -25px;
+            left:0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wh1  box1">
+        <div class=" wh2 box2"></div>
+    </div>
+    
+    <div class="wh1 box3">
+            <div class="wh2 box4"></div>
+    </div>  
+
+    <div class="wh1 box3">
+            <div class="wh2 box5"></div>
+    </div>
+
+    <div class="wh1 box3">
+            <div class="wh2 box6"></div>
+    </div>
+
+    <div class="wh1 box3">
+            <div class="wh2 box7"></div>
+    </div>
+
+    <div class="wh1 box3">
+            <div class="wh2 box8"></div>
+    </div>
+
+    <div class="wh1 box3">
+            <div class="wh2 box9"></div>
+    </div>
+
+    <div class="wh1 box3">
+            <div class="wh2 box10"></div>
+    </div>
+
+</body>
+</html>

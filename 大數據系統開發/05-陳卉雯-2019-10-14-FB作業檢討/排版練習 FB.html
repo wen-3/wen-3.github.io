@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook</title>
+
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    
+    body{
+        margin: 0 ;
+    }  
+    
+    #header{
+        width: 100%;
+        height:43px;
+        background-color:blue;
+        padding: 7px;
+        padding-left: 200px;
+        }
+
+        #header-L-L{
+            width: 30px;
+            height: 30px;
+            background-color: white; 
+            font-size: 30px;
+            line-height: 8px;
+            position: absolute;
+            font-weight: bold;
+            text-align: right;
+            color: blue;
+        }
+
+        #header-L-R{
+            width: 250px;
+            height: 30px;
+            background-color: white;
+            position: relative;
+            left: 45px;
+        }
+
+    #main{
+        width: 60%;
+        height: 358px;
+        background-color: black;
+        margin: auto;
+        position: relative;
+        border:1px solid wheat;
+        border-top: 0px;
+        background-image: url('https://live.staticflickr.com/6198/6026120068_d658ac94fc_b.jpg');
+        background-size: cover;
+        background-size: 100% calc(248px - 43px);
+        background-repeat:no-repeat;
+    }
+
+        #main-L{
+            width: 168px;
+            height: 168px;
+            background-color: orange;
+            border-radius: 100%;
+            z-index: 1;
+            border:3px solid wheat;
+            position:absolute ;
+            bottom: 25px;
+            left: 15px;
+            background-image: url("http://163.26.135.129/inkscape/l2/free/free_files/image/06.png");
+            background-size: cover;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 80%;
+        }
+
+        #main-R-L{
+            width: 60px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            bottom: 60px;
+            right: 110px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #main-R-R{
+            width: 80px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            bottom: 60px;
+            right: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+    #footer{
+         width: 100%;
+         height: 43px;
+         background-color: white;
+         position: absolute;
+         bottom: 0px;
+         padding-left: 180px;
+         }
+
+         #footer-1{
+            width:13%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid gainsboro;
+            border-top: 0px;
+            border-bottom: 0px;
+            font-weight: bold;
+            text-align: center;
+            float: left;
+         }
+
+        .fotter-style{
+            width: 8%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid gainsboro ;
+            border-top: 0px;
+            border-bottom: 0px;
+            font-weight: bold;
+            text-align: center;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="header-L-L"><p>f</p></div>
+        <div id="header-L-R"></div>
+    </div>
+
+    <div id="main">
+        <div id="main-L"></div>
+        <div id="main-R-L"><p>更新資料</p></div>
+        <div id="main-R-R"><p>查看活動資訊</p></div>
+        <div id="footer">
+            <div id="footer-1"><p>動態時報</p></div>
+            <div class="footer-style"></div>
+            <div class="footer-2 fotter-style"><p>關於</p></div>
+            <div class="footer-3 fotter-style"><p>朋友</p></div>
+            <div class="footer-4 fotter-style"><p>相片</p></div>
+            <div class="footer-5 fotter-style"><p>更多</p></div>
+        </div>
+    </div>
+</body>
+</html>

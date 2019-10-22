@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .background_1{
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://cdn.pixabay.com/photo/2016/09/08/13/58/desert-1654439__340.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .mask{
+            width:100%;
+            height:100%;
+            background-color:rgba(102, 93, 145, 0.2);
+        }
+
+        .box_1{
+            background-color: rgba(247, 0, 255, 0.99);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            top: calc(50% - 23px);
+            left: calc(50% - 100px);
+        }
+
+        .font_1{
+            padding: 20px 0px 0px 0px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .font_2{
+            text-align: justify;
+            padding: 40px;
+            padding-top: 25px;
+            line-height: 26px;
+            font-size: 20px;
+        }
+
+        .background_2{
+            width: 100%;
+            height: 50vh;
+            background-image: url("https://image.shutterstock.com/image-photo/gravel-pathway-on-wahkontah-prairie-260nw-784330411.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    
+        .title{
+            padding: 10px;
+            color:blue;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            top:calc(50% - 23px);
+            left:calc(50% - 91px);
+        }
+
+        .box_font{
+            padding: 30px;
+            background-color: rgba(255, 174, 0, 0.884);
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .background_3{
+            width: 100%;
+            height: 50vh;
+            background-image: url("https://cdn.pixabay.com/photo/2015/03/18/09/31/prairie-679016__340.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .background_4{
+            width: 100%;
+            height: 50vh;
+            background-image: url("https://cdn.pixabay.com/photo/2015/03/18/09/29/the-scenery-679011__340.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .box_2{
+            padding: 10px;
+            background-color: rgba(0, 255, 76, 0.705);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            top:calc(50% - 23px);
+            left:calc(50% - 49px);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="section_1">
+        <div class="background_1">
+            <div class="mask">
+                <span class="box_1">SCROLL DOWN</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section_2">
+        <div class="font_1">Landscape map</div>
+        <div class="font_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis voluptas officiis voluptatum sit aperiam ex corrupti recusandae quam id fugiat sapiente maxime, enim, quia facere iure quidem animi rem.
+           Fugit doloremque minus molestias, laudantium repudiandae delectus expedita pariatur debitis sequi voluptate ipsam quo unde non fugiat facilis ipsum rem dolorem alias aut quod ad neque laboriosam praesentium magni. Suscipit?
+           Iusto illum eius soluta voluptatum ratione? Placeat, vitae facilis. Accusamus unde animi, debitis, commodi porro perspiciatis possimus tempora, numquam quasi quidem cumque quo in. Natus eaque maxime fuga eveniet cumque?
+           Reprehenderit hic quibusdam excepturi natus incidunt alias explicabo sed quo! Sit est provident, debitis nihil aperiam consequatur esse asperiores nesciunt dolorum excepturi sapiente at sint non eaque quasi placeat ullam.
+           Perspiciatis, asperiores. Necessitatibus perferendis recusandae pariatur ipsum cupiditate praesentium dignissimos voluptates eum nesciunt accusantium sint, mollitia, temporibus sunt consequuntur repellendus, ea voluptatem minus nulla quis? Animi excepturi facilis mollitia neque
+        </div>
+    </section>
+    
+    <section id="section_3">
+        <div class="background_2">
+        <div class="mask">
+            <span class="title">LESS HEIGHT</span>
+        </div>
+    </section>
+
+    <section id="section_4">
+        <div class="box_font">
+            <div class="box_font_1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt optio, illum praesentium ipsa nihil illo voluptate.</div>
+        </div>
+    </section>
+    
+    <section id="section_5">
+        <div class="background_3">
+            <span class="title">SCROLL UP</span>
+        </div>
+    </section>
+
+    <section id="section_6">
+        <div class="box_font">
+            <div class="box_font_2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem facilis modi pariatur fugiat rerum provident temporibus!</div>
+        </div>
+    </section>
+
+    <section id="section_7">
+        <div class="background_4">
+            <div class="mask">
+                 <span class="box_2">COOL!</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
