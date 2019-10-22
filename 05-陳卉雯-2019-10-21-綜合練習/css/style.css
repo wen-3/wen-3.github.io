@@ -272,7 +272,8 @@ div nav div ul li{
     /* section_3*/
 #section_3{
     width: 100%;
-    height: 1200px;
+    height: 1500px;
+    margin: 0;
 }
 
 #section_3 .contain{
