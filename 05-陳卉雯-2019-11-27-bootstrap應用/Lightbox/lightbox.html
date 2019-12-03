@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+
+</head>
+<body>
+    <a href="../Lightbox/img/picture01.jpg" data-lightbox="image-1" data-title="風景照">
+    <img width="125" src="../Lightbox/img/picture01.jpg" alt="">
+    </a>
+
+    <a href="../Lightbox/img/picture02.jpg" data-lightbox="roadtrip">Image #2</a>
+    <a href="../Lightbox/img/picture03.jpg" data-lightbox="roadtrip">Image #3</a>
+    <a href="../Lightbox/img/picture04.jpg" data-lightbox="roadtrip">Image #4</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel':"風景照 %1 of %2"
+        })
+    </script>
+
+</body>
+</html>

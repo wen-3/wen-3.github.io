@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<title>Hello, world!</title>
+
+<!-- AOS 套件 -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+  @media (min-width: 1300px) {
+    .container {
+        max-width: 90%;
+    }
+  }
+  .info{
+    overflow: hidden;
+  }
+
+.info .row{
+  position: relative;
+}
+
+.info .row::before{
+  content:"";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(34, 128, 200);
+  position: absolute;
+  left: -50%;
+  top: 0;
+}
+
+.info .row::after{
+  content:"";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(95, 207, 99);
+  position: absolute;
+  right: -50%;
+  top: 0;
+}
+
+.info .col-xl-3:nth-child(1){
+  background-color: rgb(37, 142, 222);
+}
+
+.info .col-xl-3:nth-child(2){
+  background-color: rgb(79, 229, 255);
+}
+
+.info .col-xl-3:nth-child(3){
+  background-color: rgb(207, 143, 255);
+}
+
+
+.info .col-xl-3:nth-child(4){
+  background-color: rgb(105, 229, 110);
+}
+
+.info a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.info .col-xl-3{
+  cursor: pointer;
+}
+
+.info .img_block{
+  margin: 26px;
+  height: 104px;
+}
+
+.info h2{
+  margin-bottom: 26px;
+}
+
+.info .text_block_1{
+  padding: 0 26px;
+  height: 180px;
+}
+
+.info .text_block_2{
+  padding: 0 26px;
+  padding-bottom: 10px;
+  height: 48px; 
+}
+
+</style>
+
+</head>
+<body>
+
+  <!-- section_2 -->
+<section class="info">
+  <div class="container">
+    <div class="row">
+      <a class="col-xl-3 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000" >
+        <div class="img_block">
+            <img src="https://www.microsoft.com/design/fluent/assets/images/icon-globe.svg" alt="Web icon">
+        </div>
+        <div class="text_block_1">
+            <h2>Web</h2>
+            <p>Create your own web apps and add-ins.</p>
+        </div>
+        <div class="text_block_2">
+          <span></span>
+          <span>Get started</span>
+        </div>
+      </a>
+
+      <a class="col-xl-3 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="img_block">
+            <img src="https://www.microsoft.com/design/fluent/assets/images/icon-windows.svg" alt="Windows icon">
+        </div>
+        <div class="text_block_1">
+            <h2>Windows</h2>
+            <p>Create and publish your own Windows apps.</p>
+        </div>
+        <div class="text_block_2">
+          <span></span>
+          <span>Get started</span>
+        </div>
+      </a>
+
+      <a class="col-xl-3 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+        <div class="img_block">
+            <img src="https://www.microsoft.com/design/fluent/assets/images/icon-ios.svg" alt="iOS icon">
+        </div>
+        <div class="text_block_1">
+            <h2>iOS</h2>
+            <p>Take your custom apps to the mobile market.</p>
+        </div>
+        <div class="text_block_2">
+          <span></span>
+          <span>Get started</span>
+        </div>
+      </a>
+
+      <a class="col-xl-3 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+        <div class="img_block">
+            <img src="https://www.microsoft.com/design/fluent/assets/images/icon-android.svg" alt="Android icon">
+        </div>
+        <div class="text_block_1">
+            <h2>Android</h2>
+            <p>Take your custom apps to the mobile market.</p>
+        </div>
+        <div class="text_block_2">
+          <span></span>
+          <span>Get started</span>
+        </div>
+        </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- AOS 套件 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // AOS 初始化 必放!!
+    AOS.init();
+  </script>
+
+</body>
+</html>

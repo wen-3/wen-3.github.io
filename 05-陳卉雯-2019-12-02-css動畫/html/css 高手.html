@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: rgba(0, 225, 255, 0.849);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textBox{
+            color: white;
+            font-size: 200px;
+            font-family: 'Acme', sans-serif;
+            letter-spacing: 5px;
+            text-shadow: 
+            /* 假3D圖層 */
+            0px 0px 5px rgb(167, 167, 167),
+            0px 1px 5px rgb(167, 167, 167),
+            0px 2px 5px rgb(167, 167, 167),
+
+            1px 1px 5px rgb(167, 167, 167),
+            1px 2px 5px rgb(167, 167, 167),
+            1px 3px 5px rgb(167, 167, 167),
+
+            2px 3px 5px rgb(167, 167, 167),
+            2px 4px 5px rgb(167, 167, 167),
+            2px 5px 5px rgb(167, 167, 167),
+
+            /*文字邊深陰影 */
+            5px 8px 10px rgb(0, 0, 0, 0.7),
+
+            /* 文字外淺陰影 */
+            8px 15px 30px rgb(0, 0, 0, 0.5),
+            8px 15px 70px rgb(0, 0, 0, 0.5),
+
+            /*打白光 讓黑色陰影更明顯*/
+            8px 15px 120px rgb(255,255, 0, 0.5);
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="textBox">HELLO</div>
+</body>
+</html>

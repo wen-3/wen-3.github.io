@@ -1,0 +1,154 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/* nav_bar */
+#nav_bar{
+    width: 100vw;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+}
+#nav_bar_container{
+    width: calc(90% - 15px - 15px);
+    height: 100%;
+}
+
+#Nav_item_dropdown{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar_font{
+    font-size: 15px;
+}
+
+/* swiper */
+/* @media screen and (min-width: 768px) and (max-width: 1083px) {
+    .swiper_contain {
+        width: 100%;
+    }
+} */
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper{
+    width: 100vw;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper_contain{
+    width: 90%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1084px) {
+    .swiper_contain {
+        width: 100%;
+    }
+}
+
+.swiper_img01{
+    width: 100% !important;
+    height: 100%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NR20?ver=7bd2&q=90&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=213&s=2103&d=789&aim=true");
+}
+
+.swiper_img02{
+    width: 100% !important;
+    height: 100%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYN2?ver=edcf&q=90&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=190&s=2120&d=795&aim=true");
+}
+
+.swiper_fontbox{
+    display: flex;
+    align-items: center;  
+}
+
+.swiper_fontbox_position{
+    margin-left: 80px;
+    line-height: 50px;
+}
+
+.swiper_fontbox_position h2{
+    margin: 0;
+}
+
+.swiper_fontbox_position div{
+    width: 90px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper_fontbox_position div p{
+    color: white;
+    margin: 0;
+}
+
+/* card_container01 */
+@media (min-width: 1083px) {
+        .container {
+            max-width: 90%;
+        }
+}
+
+.container{
+    margin-top: 40px;
+}
+
+.container .row .card{
+    border: none;
+}
+
+.card-body h6{
+    font-weight:bold;
+}
+
+.card-body a p{
+    color: rgb(0, 89, 255);
+}
+
+/* section */
+.section{
+    margin: 48px 0px;
+    width: 100vw;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.section_contain{
+    width: calc(90% - 30px);
+    height: 100%;
+}
+
+.section_image{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1AtDc?ver=2148&q=90&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=255&s=2120&d=795&aim=true");
+    background-size: cover;
+    background-position: center;
+}
+
+/* card_container02 */
+
+.card_font{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight:bold;
+}

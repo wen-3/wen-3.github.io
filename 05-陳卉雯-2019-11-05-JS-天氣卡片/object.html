@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    .cards{
+        display: flex;
+    } 
+
+    .card_content h1{
+        padding-left:10px; 
+    }
+
+    .card_content p{
+        padding-left:20px;
+
+    }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+
+        <!-- <div class="card">
+            <div class="card_img">
+                <img src="https://cdn.pixabay.com/photo/2018/01/29/22/56/apple-3117507_960_720.jpg" alt="">
+            </div>
+            <div class="card_content">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div> -->
+    </div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script> -->
+
+<script>
+
+// Fruits
+    var A_fruit={
+        img_url:"https://cdn.pixabay.com/photo/2018/01/29/22/56/apple-3117507_960_720.jpg",
+        kind: "apple",
+        color: "red",
+        shape: "circle",
+        seed: true
+    };
+
+    var B_fruit={
+        img_url:"https://cdn.pixabay.com/photo/2017/11/02/12/24/grape-2911039_960_720.jpg",
+        kind: "grape",
+        color: "purple",
+        shape: "circle",
+        seed: true
+    };
+
+    var C_fruit={
+        img_url:"https://cdn.pixabay.com/photo/2017/06/27/22/21/banana-2449019_960_720.jpg",
+        kind: "banana",
+        color: "yellow",
+        shape: "strip",
+        seed: false
+    };
+
+    var D_fruit={
+        img_url:"https://cdn.pixabay.com/photo/2019/07/09/13/59/cherry-4326907_960_720.jpg",
+        kind: "cherry",
+        color: "darkpurple",
+        shape: "circle",
+        seed: true
+    };
+
+    var fruits=[A_fruit ,B_fruit ,C_fruit ,D_fruit];
+    
+    console.log(fruits);
+    console.log(fruits[0]);
+    console.log(fruits[2].color);
+
+    var cards=document.querySelector(".cards");
+
+    fruits.forEach(fruit => {
+         console.log(fruit);
+
+        //  cards.innerHTML+= ` `; 
+         cards.innerHTML = cards.innerHTML + `
+         <div class="card">
+            <div class="card_img">
+                 <img src="${fruit.img_url}" alt="" width=250px height=200px>
+            </div>
+  
+            <div class="card_content">
+                 <h1> ${fruit.kind}</h1>
+                 <p> color:${fruit.color}</p>
+                 <p> shape:${fruit.shape}</p>
+                 <p> seed:${fruit.seed}</p>
+            </div>
+        </div>  `;
+    });
+
+ 
+</script>
+
+</body>
+</html>

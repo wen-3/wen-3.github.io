@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    #reset_btn{
+        display: none;
+    }
+
+    #reset_btn.show{
+        display: block;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>猜數字(0~100)</h1>
+    <p class="info">開始猜數字吧</p>
+    <input id="guess_number" type="number" min="0" max="100">
+    <button id="btn">送出</button>
+    <button id="reset_btn">再玩一次</button>
+      
+<script>
+// 隨機產生0~100的數
+    var answer_number=Math.floor(Math.random() * 101);
+    var info=document.querySelector(".info");
+    var guess_round=0;
+    var min_number=0;
+    var max_number=100;
+    var reset_btn=document.querySelector("#reset_btn");
+
+    btn.onclick=function (){
+        var guess_number=parseInt(document.querySelector("#guess_number").value);
+        console.log(guess_number);
+        //querySelector 搜尋  .value 找到值   parseInt 強制轉換成數值
+
+        if (guess_number===answer_number){
+            info.textContent=`猜對了! 答案是${answer_number},共猜了${guess_round}次`;
+            // 樣板字符
+
+        }else if(guess_number>answer_number){ 
+            //70>60 0~70
+            max_number=guess_number;
+            guess_round++;
+            // guess_round=guess_round+1;
+            info.textContent=`猜錯了,共猜了${guess_round}次,範圍介於${min_number}~${max_number}之間`;
+            // 樣板字符
+
+        
+        }else{ 
+            //50<60 50~100
+            min_number=guess_number;
+            guess_round++;
+            // guess_round=guess_round+1;
+            info.textContent=`猜錯了,共猜了${guess_round}次,範圍介於${min_number}~${max_number}之間`;
+            // 樣板字符
+        }
+    }
+
+    btn.onclick=function (){
+        answer_number=Math.floor(Math.random() * 101);
+        info.textContent="遊戲重新開始";
+        guess_round=0;
+        min_number=0;
+        max_number=100;
+        document.querySelector("#guess_number").value="";
+        reset_btn.classList.remove("show");
+    }
+
+</script>
+
+</body>
+</html>

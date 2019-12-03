@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        class Drink {
+            constructor(brands, cc, sugar, ingredient, nutrientContent) {
+                this.brands = brands
+                this.cc = cc
+                this.sugar = sugar
+                this.ingredient = ingredient
+                this.nutrientContent = nutrientContent
+            }
+
+            toString() {
+                return 'brands: ' + this.brands + ', cc:' + this.cc
+            }
+        }
+
+        var a_drink = new Drink('可樂', 500, true, ['水', '糖', '更多的糖'], {
+            protein: 500,
+            fat: 2000
+        });
+
+        var b_drink = new Drink('雪碧', 500, true, ['水', '糖', '很多的糖'], {
+            protein: 300,
+            fat: 1800
+        });
+
+        var c_drink = new Drink('無糖綠茶', 500, false, ['水', '茶葉', '防腐劑'], {
+            protein: 500,
+            fat: 20
+        });
+
+        var drinks = [a_drink, b_drink, c_drink];
+
+        console.log(drinks[2].nutrientContent.fat);
+
+    </script>
+</body>
+
+</html>

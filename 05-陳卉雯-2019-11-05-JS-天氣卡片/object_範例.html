@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    .cards{
+        display: flex;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="cards">
+
+    <div class="card">
+        <div class="card_img">
+            <img src="" alt="">
+        </div>
+        <div class="card_content">
+            <h1></h1>
+            <p></p>
+        </div>
+    </div>
+
+</div>
+
+
+    
+<script>
+
+// Drinks
+    var a_drink= {
+        brands: "可樂",
+        cc:500,
+        sugar:false,
+        ingredient:["水","糖","更多的糖"],
+        nutrientContent:{
+            protein:500,
+            fat:2000
+        }
+    };
+
+    var b_drink= {
+        brands: "雪碧",
+        cc:500,
+        sugar:false,
+        ingredient:["水","糖","很多的糖"],
+        nutrientContent:{
+            protein:300,
+            fat:1800
+        }
+    };
+
+    var c_drink= {
+        brands: "無糖綠茶",
+        cc:500,
+        sugar:false,
+        ingredient:["水","茶葉","防腐劑"],
+        nutrientContent:{
+            protein:500,
+            fat:20
+        }
+    };
+
+    var drinks=[a_drink ,b_drink ,c_drink];
+        console.log(drinks);
+
+    var cards=document.querySelector(".cards");
+
+    drinks.forEach(drink => {
+         console.log(drink);
+
+         cards.innerHTML = cards.innerHTML + `
+        <div class="card">
+            <div class="card_img">
+                 <img src="https://cdn.pixabay.com/photo/2015/01/08/04/16/box-592366_960_720.jpg" alt="">
+            </div>
+            <div class="card_content">
+                 <h1>${drink.brands}</h1>
+                 <p>${drink.sugar}</p>
+                 <p>${drink.ingredient}</p>
+                 <p>${drink.nutrientContent}</p> 
+            </div>
+        </div>  `
+    });
+    
+</script>
+
+</body>
+</html>

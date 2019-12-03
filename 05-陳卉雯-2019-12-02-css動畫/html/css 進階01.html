@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .block_star{
+            width: 200px;
+            height: 150px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+
+            animation-name: testMove;    
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(.21,1.27,.68,.08);
+            animation-delay:  2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes testMove{
+            100%{
+            left: calc(100% - 100px);
+        }
+    } 
+    </style>
+</head>
+<body>
+    <div><img class="block_star" src="../img/star.jpg" alt=""></div>
+</body>
+</html>

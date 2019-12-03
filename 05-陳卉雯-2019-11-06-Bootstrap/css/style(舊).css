@@ -1,0 +1,305 @@
+
+body{
+    margin:0px;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.nav_bar{
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 預設 */
+.container {
+    width: 1536px;
+    display: flex;
+}
+
+ @media (max-width: 1680px) {
+    .container {
+        width: 1336px;
+    }
+}
+
+@media (max-width: 1460px) {
+    .container {
+        width: 1136px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0px 30px;
+        width: 100%;
+    }
+}
+
+
+.logo{
+    width:16px;
+    height: 16px;
+    background-color: blue;
+}
+
+.title{
+    color: white;
+    padding-left:calc(190px - 16px) ;
+}
+
+/* @media screen and (max-width:764px){
+
+}  */
+
+.nav_list{
+    width: 650.28px;
+    margin-left: 420px;
+    margin-right: 120px;
+}
+
+.nav_list ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_list ul li{
+    list-style-type: none;
+    
+}
+
+.nav_list ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* section_1 */
+
+.section_1{
+    height: calc(606px + 145px + 60px);
+    background-color:black;
+    padding: 0 84px;
+    padding-top: 145px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+     /* section_1_contain_L */
+    .section_1_contain_L{
+        width: 410px;
+        height: 606px;
+    }
+
+    .section_1 h1{
+        margin: 0;
+        margin-left: -6px;
+        color:rgb(79,229,255);
+        font-size: 64px;
+        line-height: 80px;
+        font-weight: 600;
+    }
+
+    .section_1 p{
+        width: 352px;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .section_1 p.text_1{
+        margin-top: 100px;
+        margin-bottom: 24px ;
+    }
+
+    .section_1 p.text_2{
+        margin-bottom: 30px;
+    }
+
+
+     /* section_1_contain_R */
+    .section_1_contain_R{
+        position: relative;
+        /* flex: 1 1 auto; */
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+
+    .section_1_img01{
+        position: absolute;
+        top: -15px;
+        right: 180px;
+        pointer-events: none;
+    } 
+
+    .section_1_img02{
+        position: absolute;
+        bottom: 155px;
+        left: 180px;
+        pointer-events: none;
+    }
+/* 
+    .section_1_img03{
+        margin: 0px;
+        padding: 0px;
+        border-spacing: 0px;
+    } */
+
+/* section_2 */
+
+.section_2{
+    height: 384px;
+    display: flex;
+    justify-content: center;
+}
+
+.section_2 #box{
+    width: 384px;
+    height: 100%;
+    padding-left: 26px;
+}
+
+.section_2 #box img{
+    padding-top: 26px;
+}
+
+.section_2 #box div{
+    margin-top: calc(236px - 66px - 26px);
+}
+
+.section_2 #box div h1{
+    font-size: 32px;
+    letter-spacing: -0.03rem;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.section_2 #box div p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.section_2 #box div p::after{
+    content: "→ Get started";
+}
+
+.section_2 .box_1{
+    background-color: rgb(37, 142, 222);
+}
+
+.section_2 .box_1::before{
+    content: "";
+    background-color: rgb(34, 128, 200);
+}
+
+.section_2 .box_2{
+    background-color: rgb(79, 229, 255);
+}
+
+.section_2 .box_3{
+    background-color: rgb(207, 143, 255);
+}
+
+.section_2 .box_4{
+    background-color: rgb(105, 229, 110);
+}
+
+/* section_3 */
+.section_3{
+    height: 768px;
+    padding: 0 84px;
+    background-image: url("https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section_3 h1{
+    margin: 0;
+    padding: 0 24px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+}
+
+.section_3 p{
+    width: 344px;
+    height: 120px;
+    padding-left: 24px;
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+
+/* section_4 */
+
+.section_4{
+    width: 100%;
+    height: 720px;
+    background-color:rgb(25,25,25);
+}
+
+.section_4_contain{
+    height: 100%;
+    margin: 0px 112px;
+    position: relative;
+}
+
+.section_4_img01{
+    position: absolute;
+    top: -200px;
+    right: 130px;
+}
+
+.section_4_img02{
+    position: absolute;
+    top: 570px;
+    left: 190px;
+}
+
+.section_4_img03{
+    padding: 60px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* section_5 */
+
+.section_5{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+
+.section_5_contain{
+    margin: 0px 156px;
+}
+
+.text_5_contain{
+    
+}
+
+
+/* section_6 */

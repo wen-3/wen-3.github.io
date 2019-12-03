@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 2000px;
+            margin: 0;
+            background-color: #eee;
+        }
+
+        #tabs {
+            max-width: 400px;
+            margin: 60px auto 0 auto;
+        }
+
+        .tab_links {
+            display: flex;
+        }
+
+        .tab_btn {
+            padding: 8px 20px;
+            margin-right: 5px;
+            border-radius: 10px 10px 0 0;
+            background-color: #666;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tab_btn.active {
+            background-color: white;
+            color: #666;
+        }
+
+        .tab_content {
+            /* display: none; */
+            opacity: 0;
+            pointer-events: none;
+            height: 0;
+            overflow: hidden;
+            background-color: white;
+            transition: 1s opacity;
+        }
+
+        .tab_content.active {
+            /* display: block; */
+            height: auto;
+            opacity: 1;
+            pointer-events: all;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tabs">
+        <div class="tab_links">
+            <div class="tab_btn active">Tab1</div>
+            <div class="tab_btn">Tab2</div>
+            <div class="tab_btn">Tab3</div>
+            <div class="tab_btn">Tab4</div>
+        </div>
+
+        <div class="tab_contents">
+            <div class="tab_content active">
+                <h1>Tab1 Title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iure blanditiis quo perferendis
+                    eligendi dignissimos sit autem sequi quis animi soluta veritatis sunt, ipsum molestiae ducimus, rem
+                    qui et? Pariatur!</p>
+            </div>
+            <div class="tab_content">
+                <h1>Tab2 Title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iure blanditiis quo perferendis
+                    eligendi dignissimos sit autem sequi quis animi soluta veritatis sunt, ipsum molestiae ducimus, rem
+                    qui et? Pariatur!</p>
+            </div>
+            <div class="tab_content">
+                <h1>Tab3 Title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iure blanditiis quo perferendis
+                    eligendi dignissimos sit autem sequi quis animi soluta veritatis sunt, ipsum molestiae ducimus, rem
+                    qui et? Pariatur!</p>
+            </div>
+            <div class="tab_content">
+                <h1>Tab4 Title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iure blanditiis quo perferendis
+                    eligendi dignissimos sit autem sequi quis animi soluta veritatis sunt, ipsum molestiae ducimus, rem
+                    qui et? Pariatur!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(".tab_btn").click(function () {
+            //拿掉所有人的active
+            $(".tab_btn").removeClass("active");
+
+            //加上自己按鈕的active
+            $(this).addClass("active");
+
+            //找到是第幾個
+            var index = $(".tab_btn").index(this);
+
+            $(".tab_content").removeClass("active");
+
+            //加上自己內容的active
+            $(`.tab_content:nth-child(${index+1})`).addClass("active");
+            
+        });
+    </script>
+</body>
+
+</html>
